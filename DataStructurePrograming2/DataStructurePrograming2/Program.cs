@@ -9,12 +9,14 @@ namespace DataStructurePrograming2
         {
             Console.WriteLine("Hello data structure programing2 start");
 
-            Stack Mystack = new Stack();
-            Mystack.Push(23);
-            Mystack.Push(31);
-            Mystack.Push(33);
-            Mystack.Pop();
-            Mystack.Display();
+            Queue Myqueue = new Queue();
+            Myqueue.Enqueue(56);
+            Myqueue.Enqueue(30);
+            Myqueue.Enqueue(70);
+
+            Console.WriteLine("your output");
+
+            Myqueue.Displaye();
 
 
         }
