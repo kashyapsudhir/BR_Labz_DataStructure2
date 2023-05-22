@@ -8,38 +8,21 @@ namespace DataStructurePrograming2
 {
     public class Stack
     {
-        public class Node
+        private LinkedList stack = new LinkedList();
+
+        public void Push(int data)
         {
-            public int data;
-            public Node next;
-
-            public Node(int data) //Constructor
-            {
-                this.data = data;
-            }
-
+            stack.AddToLast(data);
         }
-        public Node Top;
-
-        public void push(int data)
+        public void Pop()
         {
-            Node newNode = new Node(data);
-            if (this.Top == null)
-            {
-                newNode.next = this.Top;
-            }
-            this.Top = newNode;
-            Console.WriteLine($" The new top element is : {data}");
+            stack.DeleteLast();
         }
 
-        public void peek()
+        public void Display()
         {
-            Node node = this.Top;
-            Console.WriteLine($"The top element is : {node.data}");
+            stack.Display();
         }
-
-        
-
 
     }
 }
