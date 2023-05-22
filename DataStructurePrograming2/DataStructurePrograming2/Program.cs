@@ -13,9 +13,8 @@ namespace DataStructurePrograming2
             Myqueue.Enqueue(56);
             Myqueue.Enqueue(30);
             Myqueue.Enqueue(70);
-
+            Myqueue.Dequeue();
             Console.WriteLine("your output");
-
             Myqueue.Displaye();
 
 

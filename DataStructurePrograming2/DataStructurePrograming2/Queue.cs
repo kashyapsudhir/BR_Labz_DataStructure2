@@ -8,16 +8,21 @@ namespace DataStructurePrograming2
 {
     public class Queue
     {
-        LinkedList queue = new LinkedList();
+        LinkedList Myqueue = new LinkedList();
+
+        
 
         public void Enqueue(int data)
         {
-            queue.AddToLast(data);
+            Myqueue.AddToLast(data);
         }
-
+        public void Dequeue()
+        {
+            Myqueue.DeleteFirst();
+        }
         public void Displaye()
         {
-            queue.Display();
+            Myqueue.Display();
         }
 
     }
